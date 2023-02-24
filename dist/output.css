@@ -625,6 +625,10 @@ video {
   padding: 1.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .font-Montserrat {
   font-family: Montserrat, sans-serif;
 }
@@ -667,4 +671,24 @@ video {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+@media not all and (min-width: 640px) {
+  .max-sm\:w-\[35rem\] {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .max-\[320px\]\:w-\[18rem\] {
+    width: 18rem;
+  }
+
+  .max-\[320px\]\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .max-\[320px\]\:text-\[0\.9rem\] {
+    font-size: 0.9rem;
+  }
 }
