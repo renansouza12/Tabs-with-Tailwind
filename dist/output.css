@@ -521,8 +521,25 @@ video {
   height: 100vh;
 }
 
+.h-\[30rem\] {
+  height: 30rem;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
+}
+
 .place-content-center {
   place-content: center;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
