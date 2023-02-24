@@ -9,7 +9,17 @@ module.exports = {
     fontFamily:{
       'Montserrat':['Montserrat', 'sans-serif']
     },
-    extend: {},
+    extend: {
+     animation:{
+      'moving': 'moving .5s ease'
+     },
+     keyframes:{
+      moving:{
+        '0%':{transform: 'translateX(50px)', opacity:'0'},
+        '100%':{transform: 'translateX(0px)', opacity:'1'}
+      }
+     }
+    },
   },
   plugins: [],
 }
