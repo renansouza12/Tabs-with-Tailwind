@@ -10,5 +10,13 @@ tabs.forEach((tab, index)=>{
 
         line.style.width = e.target.offsetWidth + 'px';
         line.style.left = e.target.offsetLeft + 'px'; 
+
+        contents.forEach((content) =>{
+            content.classList.remove("block");
+            content.classList.add("hidden");
+        })
+
+        contents[index].classList.remove("hidden");
+        contents[index].classList.add("block");
     })
 })
